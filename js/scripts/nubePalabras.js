@@ -15,7 +15,7 @@ function generarNubeDePalabras() {
     fontFamily: 'Arial',
     color: '#F06335',
     rotateRatio: 0,
-    backgroundColor: '#f2f2f2'
+    backgroundColor: '#ffff'
   });
 }
 
