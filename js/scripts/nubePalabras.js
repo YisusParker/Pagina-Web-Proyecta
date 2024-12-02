@@ -13,7 +13,7 @@ function generarNubeDePalabras() {
     gridSize: 12,
     weightFactor: 4,
     fontFamily: 'Arial',
-    color: '#F06335',
+    color: '#F24C3D',
     rotateRatio: 0,
     backgroundColor: '#ffff'
   });

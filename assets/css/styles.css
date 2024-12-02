@@ -1,17 +1,77 @@
-html, body {
-    margin: 0;
-    padding: 0;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  
 }
+
 header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between; /* Alinea el logo a la izquierda y la navegación a la derecha */
-    align-items: center; /* Centra verticalmente los elementos */
-    padding: 10px 20px; /* Espacio interno */
-    background-color: #333; /* Fondo del header */
-    color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Alinea el logo a la izquierda y la navegación a la derecha */
+  align-items: center; /* Centra verticalmente los elementos */
+  padding: 10px 20px; /* Espacio interno */
+  color: black;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+.startSection-first{
+  display: flex;
+  gap: 10px;
+}
+.imgcorpo{
+  clip-path: inset(0 40px 0 0); /* Recorta 50px del lado derecho */
+  position: relative; /* Asegura que el clip-path se aplique correctamente */
+  width: 50%;
+  height: 50%;
+  border-radius: 20px;
+  box-shadow: 2px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+header a {
+    color: #F24C3D; /* Define el color deseado */
+    text-decoration: none; /* Opcional: elimina el subrayado si no lo quieres */
+    padding-inline: 5px;
+    font-weight: bold;
+}
+
+.initialText{
+  color: #162938;
+  margin: auto;
+  text-align: center;
+  width:40%
+}
+
+.call-to-action{
+  background-color: #F24C3D;
+  color: white;
+  border-color: transparent;
+  border-radius: 4px;
+  
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.call-to-action:hover{
+  background-color: #e04e2e;
+  cursor: pointer;
 }
 
 #navbar {
-    background-color: orangered;
+  background-color: #27425914;
+}
+.logo-header {
+  width: 20;
+}
+
+.icon-social img {
+  width: 24px; /* Adjust size as needed */
+  height: 24px; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensures proper scaling */
 }

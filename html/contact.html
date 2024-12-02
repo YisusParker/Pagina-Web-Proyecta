@@ -1,32 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script source="main.js"></script>
-    <title>contacto</title>
-</head>
-<body>
-    <h2>CONTACTANOS</h2>
-    <div class="card1">
-        <p>Contáctanos y un miembro de nuestro equipo se pondrá en contacto contigo lo antes posible.</p>
-        <form action="main.js" method="get">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" required>
-            
-            <label for="email">Email</label>
-            <input type="text" id="email" email="email" required>
+    <title>Formulario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
 
-            <input type="submit" value="Enviar" id="botonEnviar">
+        }
+
+        .form-card {
+            width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-card label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            font-size: 14px;
+            color: #274259;
+            ;
+        }
+
+        .form-card select,
+        .form-card input,
+        .form-card textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+
+        }
+
+        .form-card button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff583385;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-title {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+
+        .form-card button:hover {
+            background-color: #e04e2e;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="form-card">
+        <h2 class="form-title"><span style="color: #274259;">Asesoría</span> <span
+                style="color: #e04e2e;">Virtual</span></h2>
+        <form>
+            <label for="tipo-cliente">Tipo de cliente:</label>
+            <select name="tipoCliente" id="">
+                <option value="" disabled selected>Seleccione...</option>
+                <option value="natural">Natural</option>
+                <option value="empresa">Empresa</option>
+            </select>
+
+            <label for="program">Selecciona un programa de interés</label>
+            <select id="program" name="program">
+                <option value="" disabled selected>Seleccione...</option>
+                <option value="programaForamtivo">Programa formativos</option>
+                <option value="programaAtencionPsico">Atención psicológica</option>
+                <option value="programaNegociacionResolucionConflictos">Negociación y resolución de conflictos</option>
+                <option value="programaEquiposTrabajo">De grupo de trabajos a equipos de trabajo</option>
+                <option value="programaCoaching">Coaching</option>
+                <option value="programa6">Programa de prejubilados</option>
+                <option value="programaEstiloSaludable">Estilo de vida saludable</option>
+                <option value="programaLiderazgo">Escuela de liderazgo</option>
+                <option value="programaIdentidadServ">Identidad de servicio</option>
+            </select>
+            <label for="name">Nombre completo/Razon social</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre completo" required>
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+            <label for="phone">Teléfono</label>
+            <input type="tel" id="phone" name="phone" placeholder="Tu teléfono" required>
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
+            <button type="submit">Enviar</button>
         </form>
-        
-    </div>
-    <div class="card2">
-        <h3>INFOMRACIÓN DE CONTACTO</h3>
-        <P id="adress">123 Fake Street, Springfield, USA</P>
-        <p id="mail">proyectapotencialeshumanos@gmail.com</p>
-        <p id="phone">(555) 012-3456</p>
-        
-    </div>
-</body>
+        </div>
+    </section>
+
 </html>

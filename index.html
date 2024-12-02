@@ -12,37 +12,48 @@
 
 <body>
     <header id="navbar">
-        <div class="logo">
-            <img src="" alt="Logo de la empresa">
+        <div class="logo-header">
+            <img src="assets\icons\Logo.svg" style="width: 120px; padding-top: 20px;" alt="Logo de la empresa">
         </div>
         <nav class="main-nav">
-            <a href="home.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="form.html">Form</a>
+            <a href="index.html">Home</a>
+            <a href="sanamente.html">Programas</a>
+            <a href="gallery.html">Galeria</a>
+            <a href="contact.html">Contactanos</a>
         </nav>
         <nav class="social-nav">
-            <a href="https://www.linkedin.com/company/proyecta-potenciales-humanos/" target="_blank"><img src=""
-                    alt="LinkedIn"></a>
-            <a href="https://www.facebook.com/p/Proyecta-Potenciales-Humanos-100051498353683/?_rdr" target="_blank"><img
-                    src="" alt="Facebook"></a>
-            <a href="https://www.instagram.com/psicoproyecta/" target="_blank"><img src="" alt="Instagram"></a>
+            <a class="icon-social" href="https://www.linkedin.com/company/proyecta-potenciales-humanos/"
+                target="_blank"><img src="assets\icons\linkdin.svg" alt="LinkedIn"></a>
+            <a class="icon-social" href="https://www.facebook.com/p/Proyecta-Potenciales-Humanos-100051498353683/?_rdr"
+                target="_blank"><img src="assets\icons\facebook.svg " alt="Facebook"></a>
+
+            <a class="icon-social" href="https://www.instagram.com/psicoproyecta/" target="_blank"><img
+                    src="assets\icons\instagram.svg" alt="Instagram"></a>
         </nav>
     </header>
 
     <main>
         <section class="startSection">
-            <!-- Contenedor para la nube de palabras -->
+            <section class="startSection-first">
+                <!-- Contenedor para la nube de palabras -->
             <canvas id="wordCloudCanvas" width="800" height="600"></canvas>
 
             <!-- Incluye tu script personalizado para la nube de palabras -->
             <script src="js\scripts\nubePalabras.js"></script>
-
-            <img src="" alt="corporative_img1">
+            <img class="imgcorpo" src="assets\img\tree-736885_1280.jpg" alt="corporative_img1">
+            </section>
+            
+            <button class="call-to-action">proyecta-potenciales-humanos click</button>
             <div class="initialText">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim impedit molestiae iste incidunt expedita
-                odit. Sapiente, vero. Obcaecati aut sequi ipsam eos amet dolorem soluta tempora modi, fuga sit quisquam?
+                Somos una empresa con <span style="color: #e04e2e;  font-weight: bold;">15 años</span> de experiencia
+                dedicada a fortalecer la <span style="color: #e04e2e;  font-weight: bold;">salud emocional y
+                    cognitiva</span> a través de la reestructuración de hábitos. Proporcionamos herramientas para
+                explorar el potencial humano mediante programas de intervención personalizados, basados en el
+                autoconocimiento. Nuestro enfoque, respaldado por la <span
+                    style="color: #e04e2e;  font-weight: bold;">psicologia clinica y educativa</span>, resalta la
+                importancia de la salud emocional en el desarrollo personal y el bienestar general.
             </div>
+
         </section>
         <section class="cardSection">
             <div class="card1" id="mision">
