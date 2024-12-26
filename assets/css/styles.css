@@ -1,77 +1,362 @@
+/* ===== GLOBAL STYLES ===== */
 html,
 body {
   margin: 0;
   padding: 0;
-  
+  width: 100vw;
+  background-color: #f0f0f0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+ul {
+  list-style-type: none;
+}
+
+mark {
+  background-color: transparent;
+  color: #f24c3d;
+  font-weight: bold;
+}
+
+.titulos {
+  text-align: center;
+  text-decoration: solid;
+  color: #274259;
+  padding: 20px 0;
+}
+
+/* ===== HEADER ===== */
 header {
-  width: 100%;
   display: flex;
-  justify-content: space-between; /* Alinea el logo a la izquierda y la navegación a la derecha */
-  align-items: center; /* Centra verticalmente los elementos */
-  padding: 10px 20px; /* Espacio interno */
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 10px;
   color: black;
-  padding-bottom: 10px;
-  padding-top: 20px;
-}
-
-.startSection-first{
-  display: flex;
-  gap: 10px;
-}
-.imgcorpo{
-  clip-path: inset(0 40px 0 0); /* Recorta 50px del lado derecho */
-  position: relative; /* Asegura que el clip-path se aplique correctamente */
-  width: 50%;
-  height: 50%;
-  border-radius: 20px;
-  box-shadow: 2px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
 }
 
 header a {
-    color: #F24C3D; /* Define el color deseado */
-    text-decoration: none; /* Opcional: elimina el subrayado si no lo quieres */
-    padding-inline: 5px;
-    font-weight: bold;
+  color: #f24c3d;
+  text-decoration: none;
+  padding-inline: 5px;
+  font-weight: bold;
 }
 
-.initialText{
-  color: #162938;
-  margin: auto;
-  text-align: center;
-  width:40%
+/* Logo */
+.logo-header {
+  width: 20px;
 }
 
-.call-to-action{
-  background-color: #F24C3D;
-  color: white;
-  border-color: transparent;
-  border-radius: 4px;
-  
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-}
-.call-to-action:hover{
-  background-color: #e04e2e;
-  cursor: pointer;
+/* Social Icons in Header */
+.icon-header {
+  object-fit: contain;
+  transition: transform 0.3s;
 }
 
+.icon-header:hover {
+  transform: scale(1.1);
+}
+
+/* Navbar */
 #navbar {
   background-color: #27425914;
 }
-.logo-header {
-  width: 20;
+
+/* Buttons */
+button {
+  background-color: aquamarine;
 }
 
-.icon-social img {
-  width: 24px; /* Adjust size as needed */
-  height: 24px; /* Maintain aspect ratio */
-  object-fit: contain; /* Ensures proper scaling */
+/* ===== SECTIONS ===== */
+
+/* General Styles for Sections */
+.find {
+  background-color: #336185;
+}
+
+.contact {
+  background-color: aqua;
+  text-align: center;
+}
+
+.ourTeamSection {
+  padding: 40px;
+}
+
+.ourTeamSection .descripcion {
+  padding: 0 50px;
+  text-align: center;
+  color: #162938;
+}
+
+/* ===== CLIENT LOGO ANIMATION ===== */
+.clientSection {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.logo-container {
+  display: inline-block;
+  animation: slide 20s linear infinite;
+}
+
+.logoClass {
+  width: 10%;
+  aspect-ratio: 4/3;
+  object-fit: contain;
+  padding-right: 20px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Duplicate logos for infinite scroll effect */
+.logo-container::after {
+  content: "";
+  display: inline-block;
+  animation: slide 20s linear infinite;
+}
+
+/* ===== TEAM CARDS ===== */
+.teammates {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.team-card {
+  width: 220px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.teamate-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.teamate-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #336185;
+}
+
+.teamate-role {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-icons a {
+  font-size: 18px;
+  color: #274259;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #f24c3d;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: #27425914;
+  color: #f24c3d;
+  padding: 40px 20px;
+  font-family: "Arial", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.footer-contact {
+  flex: 1;
+  min-width: 300px;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.footer h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-list li {
+  margin-bottom: 10px;
+}
+
+.footer-list a {
+  color: #274259;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-list a:hover {
+  color: #0077b5;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-footer {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s;
+}
+
+.icon-footer:hover {
+  transform: scale(1.1);
+}
+
+.footer-location {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.footer-map {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.footer h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-location p a {
+  color: #274259;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0 0;
+  border-top: 1px solid #c5bdbd;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #27425970;
+}
+
+/* ===== CARDS SECTION ===== */
+.cardSection {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card1 {
+  color: #274259;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 32%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card1 img {
+  width: 100%;
+  height: 40%;
+  object-fit: cover;
+}
+
+.card1 h2 {
+  font-size: 1.5rem;
+  margin: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.card1 p {
+  padding: 0 20px 20px;
+  text-align: justify;
+  font-size: 1rem;
+}
+
+.button2 {
+  border-width: 0;
+  background-color: #f24c3d;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  width: fit-content;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 auto 40px;
+  border-radius: 8px;
+}
+
+.button2:hover {
+  background-color: #f14c3d;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.initialText {
+  color: #274259;
+  text-align: center;
+  margin: 0 200px;
+  padding: 30px;
+}
+
+canvas {
+  background-color: transparent;
+}
+
+.textnav:hover {
+  color: #f14c3d;
+  transform: scale(1.1);
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.imgcorpo {
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+  display: inline-block;
+  border-radius: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin: 40px 0 60px;
 }

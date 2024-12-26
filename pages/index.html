@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>proyecta-potenciales-humanos</title>
+    <link rel="stylesheet" href="..\assets\css\styles.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <!-- Librerias -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wordcloud2.js/1.1.0/wordcloud2.min.js"></script>
+</head>
+
+<body>
+    <header id="navbar">
+        <div class="logo-header">
+            <img src="..\assets\icons\Logo.svg" style="width: 120px; padding-top: 20px" alt="Logo de la empresa" />
+        </div>
+        <nav class="main-nav">
+            <a class="textnav" href="index.html">Home</a>
+            <a class="textnav" href="sanamente.html">Programas</a>
+            <a class="textnav" href="gallery.html">Galeria</a>
+            <a class="textnav" href="contact.html">Contactanos</a>
+        </nav>
+        <nav class="social-nav">
+            <a class="icon-social" href="https://www.linkedin.com/company/proyecta-potenciales-humanos/"
+                target="_blank">
+                <i class="fab fa-linkedin fa-2x icon-header"></i>
+            </a>
+            <a class="icon-social" href="https://www.facebook.com/p/Proyecta-Potenciales-Humanos-100051498353683/?_rdr"
+                target="_blank">
+                <i class="fab fa-facebook fa-2x icon-header"></i>
+            </a>
+            <a class="icon-social" href="https://www.instagram.com/psicoproyecta/" target="_blank">
+                <i class="fab fa-instagram fa-2x icon-header"></i>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="startSection">
+            <section class="startSection-first">
+                <!-- Contenedor para la nube de palabras -->
+                <canvas id="wordCloudCanvas" width="800" height="600""></canvas>
+
+                <!-- Incluye tu script personalizado para la nube de palabras -->
+                <script src="..\js\scripts\nubePalabras.js"></script>
+                <img class="imgcorpo" src="..\assets\img\firstimg.jpg" alt="corporative_img1" />
+            </section>
+
+            <a href="..\pages\contact.html" class="button2"> EMPIEZA TU CAMBIO AHORA</a>
+
+            <div class="initialText">
+                Somos una empresa con
+                <span style="color: #e04e2e; font-weight: bold">15 años</span> de
+                experiencia dedicada a fortalecer la
+                <span style="color: #e04e2e; font-weight: bold">salud emocional y cognitiva</span>
+                a través de la reestructuración de hábitos. Proporcionamos
+                herramientas para explorar el potencial humano mediante programas de
+                intervención personalizados, basados en el autoconocimiento. Nuestro
+                enfoque, respaldado por la
+                <span style="color: #e04e2e; font-weight: bold">psicologia clinica y educativa</span>, resalta la
+                importancia de la salud emocional en el desarrollo
+                personal y el bienestar general.
+            </div>
+        </section>
+        <section class="cardSection">
+            <div class="card1" id="mision">
+                <h2 class="titulos">Misión</h2>
+                <img src="..\assets\img\card-images\visionimg.jpg" alt="imgMision" />
+                <p>
+                    Nuestra <mark>misión</mark> es fomentar el <mark>bienestar emocional</mark> en las
+                    organizaciones. Ayudamos a cada colaborador a descubrir y potenciar sus
+                    capacidades para ser el generador de su propio bienestar. Un entorno
+                    laboral saludable no solo mejora la <mark>productividad</mark>, sino que también
+                    enriquece la vida de quienes forman parte de la empresa. Creemos que el
+                    bienestar de los colaboradores es fundamental para el éxito y la
+                    sostenibilidad de la organización.
+                </p>
+            </div>
+            <div class="card1" id="vision">
+                <h2 class="titulos" style="color: #F24C3D;">Visión</h2>
+                <img src="..\assets\img\card-images\misionimg.jpg" alt="imgVision" />
+                <p>
+                    Nuestra <mark>visión</mark> es transformar la calidad de vida de las personas y
+                    organizaciones, promoviendo la salud <mark>mental</mark> y el desarrollo psicosocial.
+                    Queremos ser un referente de impacto positivo, acompañando a las personas en
+                    su bienestar y contribuyendo al crecimiento del conocimiento científico en
+                    nuestra comunidad. Aspiramos a tener un impacto profundo en la región
+                    <mark>Caribe</mark> y el país, siendo un modelo de crecimiento personal y colectivo.
+                </p>
+            </div>
+            <div class="card1" id="enfoque">
+                <h2 class="titulos">Enfoque de nuestros programas</h2>
+                <img src="..\assets\img\card-images\aproachimg.jpg" alt="imgEnfoque" />
+                <p>
+                    Adoptamos un enfoque teórico fundamentado en el <mark>constructivismo</mark> y la
+                    psicología positiva, inspirados en las teorías de <mark>Vygotsky</mark>, <mark>Bruner</mark>, <mark>Csikszentmihalyi</mark> y <mark>Beck</mark>. Nuestro objetivo es ayudar a las personas a reconstruir situaciones de la vida real, aprovechando sus capacidades para fomentar el crecimiento personal. La interacción social y el aprendizaje activo son pilares clave, basados en la idea de que el conocimiento se construye mediante la interacción con el entorno. Además, promovemos el <mark>estado de flujo</mark> y utilizamos técnicas psicoeducativas para mejorar el aprendizaje y el desarrollo integral.
+                </p>
+            </div>
+        </section>
+        
+        
+        
+        <section class="clientSection">
+            <h2 class="titulos"> Nuestros <mark>Clientes</mark></h2>
+            <div class="logo-container">
+                <img src="\assets\img\main-images\clients-logos\chmineria.png" alt="chmineria" class="logoClass" />
+                <img src="\assets\img\main-images\clients-logos\clinicadelcaribe.png" alt="clinicadelcaribe"
+                    class="logoClass" />
+                <img src="\assets\img\main-images\clients-logos\combarranquilla.png" alt="combarranquilla"
+                    class="logoClass" />
+                <img src="\assets\img\main-images\clients-logos\contactarmicrofinanciera.png"
+                    alt="contactarmicrofinanciera" class="logoClass" />
+                <img src="\assets\img\main-images\clients-logos\countryclub.png" alt="countryclub" class="logoClass" />
+                <img src="\assets\img\main-images\clients-logos\gases del caribe.png" alt="gases del caribe"
+                    class="logoClass" />
+                <img src="\assets\img\main-images\clients-logos\gasesoccidente.png" alt="gasesoccidente"
+                    class="logoClass" />
+                <img src="\assets\img\main-images\clients-logos\gecelca.svg" alt="gecelca" class="logoClass" />
+                <img src="\assets\img\main-images\clients-logos\hcmlogo.png" alt="hcmlogo" class="logoClass" />
+                <img src="\assets\img\main-images\clients-logos\icontec.png" alt="icontec" class="logoClass" />
+                <img src="\assets\img\main-images\clients-logos\karlparrish.png" alt="karlparrish" class="logoClass" />
+                <img src="\assets\img\main-images\clients-logos\Marymount.png" alt="Marymount" class="logoClass" />
+                <img src="\assets\img\main-images\clients-logos\naturmega.webp" alt="naturmega" class="logoClass" />
+                <img src="\assets\img\main-images\clients-logos\nexocaribecolor.png" alt="nexocaribecolor"
+                    class="logoClass" />
+                <img src="assets\img\main-images\clients-logos\nexxocaribeblanco.png" alt="nexxocaribeblanco"
+                    class="logoClass" />
+                <img src="\assets\img\main-images\clients-logos\procaps.png" alt="procaps" class="logoClass" />
+                <img src="\assets\img\main-images\clients-logos\Promigas.png" alt="Promigas" class="logoClass" />
+                <img src="\assets\img\main-images\clients-logos\Promisol.png" alt="Promisol" class="logoClass" />
+                <img src="\assets\img\main-images\clients-logos\surtigas.png" alt="surtigas" class="logoClass" />
+                <img src="\assets\img\main-images\clients-logos\tripleA.png" alt="tripleA" class="logoClass" />
+                <img src="\assets\img\main-images\clients-logos\unibolsas.png" alt="unibolsa" class="logoClass" />
+                <img src="\assets\img\main-images\clients-logos\uninorte.png" alt="uninorte" class="logoClass" />
+                <img src="\assets\img\main-images\clients-logos\universidadbosque.png" alt="universidadbosque"
+                    class="logoClass" />
+            </div>
+        </section>
+
+
+        <section class="ourTeamSection">
+            <h2 class="titulos">Nuestro <mark>Equipo</mark></h2>
+            <div class="descripcion">
+                Contamos con un equipo interdisciplinario de consultores bajo el liderazgo
+                de <mark>Ximena Pérez Arce</mark>, Psicóloga, Magíster en Psicología Clínica, 
+                <mark>Líder Coach</mark>, Certificada bajo la metodología <mark>Lego Serious Play</mark>, 
+                con amplia experiencia como consultora empresarial, psicoterapeuta y docente
+                universitaria. Somos un equipo que diseña, implementa, evalúa y
+                monitorea experiencias que impactan las dimensiones <mark>cognitiva</mark>, 
+                <mark>emocional</mark>, <mark>lingüística</mark>, <mark>conductual</mark> y <mark>social</mark> 
+                del ser humano. Proporcionamos herramientas para impulsar cambios positivos y observables en el
+                desarrollo y bienestar de las personas y sus organizaciones.
+              
+                Dentro del equipo de <mark>Proyecta Potenciales Humanos</mark>, se encuentran
+                <mark>Psicólogos clínicos</mark>, <mark>Especialistas en Educación Superior</mark>, <mark>Ingenieros</mark>, 
+                <mark>Psicoestadistas</mark>, e <mark>Investigadores con PhD</mark>.
+              </div>
+              
+            <div class="teammates">
+                <!-- Tarjeta 1 -->
+                <div class="team-card">
+                    <img src="..\assets\img\main-images\clients-logos\team\ximenaimg.jpg" alt="Ximena Perez Arce"
+                        class="teamate-photo" />
+                    <h3 class="teamate-name">Ximena Perez Arce</h3>
+                    <p class="teamate-role">CEO</p>
+                    <div class="social-icons">
+
+                        <a href="https://www.linkedin.com/in/ximena-perez-arce/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="team-card">
+                    <img src="..\assets\img\main-images\clients-logos\team\enriqueimg.jpg" alt="Kike"
+                        class="teamate-photo" />
+                    <h3 class="teamate-name">Enrique Lopez Campo</h3>
+                    <p class="teamate-role">Consultor</p>
+                    <div class="social-icons">
+
+                        <a href="https://www.linkedin.com/in/enrique-lopez-campo-4a0937277/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+
+                    </div>
+                </div>
+                <!-- Tarjeta 3 -->
+                <div class="team-card">
+                    <img src="..\assets\img\main-images\clients-logos\team\claudiaimg.jpg" alt="Claudia Prada Pinilla"
+                        class="teamate-photo" />
+                    <h3 class="teamate-name">Claudia Prada Pinilla</h3>
+                    <p class="teamate-role">Consultora</p>
+                    <div class="social-icons">
+
+                        <a href="https://www.linkedin.com/in/claudia-prada-pinilla/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+
+                    </div>
+                </div>
+                <!-- Tarjeta 4 -->
+                <div class="team-card">
+                    <img src="..\assets\img\main-images\clients-logos\team\kevinimg.jpg" alt="Kevin Salgado Rubio"
+                        class="teamate-photo" />
+                    <h3 class="teamate-name">Kevin Salgado Rubio</h3>
+                    <p class="teamate-role">Consultor</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/kevinsalgadorubio/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <a href="..\pages\contact.html" class="button2"> EMPIEZA TU CAMBIO AHORA</a>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Contact Section -->
+            <div class="footer-contact">
+                <img src="..\assets\icons\Logo.svg" alt="Logo Proyecta" class="footer-logo" />
+                <h4>Contacto</h4>
+                <ul class="footer-list">
+                    <li><a href="mailto:info@proyecta.com">info@proyecta.com</a></li>
+                    <li><a href="tel:3153565655">315 356 5655</a></li>
+                    <li class="footer-icons">
+                        <a href="https://www.linkedin.com/company/proyecta-potenciales-humanos/" target="_blank">
+                            <i class="fab fa-linkedin icon-footer"></i>
+                        </a>
+                        <a href="https://www.facebook.com/p/Proyecta-Potenciales-Humanos-100051498353683/?_rdr"
+                            target="_blank">
+                            <i class="fab fa-facebook icon-footer"></i>
+                        </a>
+                        <a href="https://www.instagram.com/psicoproyecta/" target="_blank">
+                            <i class="fab fa-instagram icon-footer"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Location Section -->
+            <div class="footer-location">
+                <h5>Encuéntranos</h5>
+                <p>
+                    <a href="https://www.google.com/maps?q=Cra+54+%23132-120,+Barranquilla" target="_blank"> <!--Revisar direccion-->
+                        Cra 54 #132-120<br />
+                        Barranquilla
+                    </a>
+                </p>
+            </div>
+            
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Proyecta. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
