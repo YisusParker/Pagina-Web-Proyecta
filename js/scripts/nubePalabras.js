@@ -24,13 +24,7 @@ function generarNubeDePalabras() {
   });
 }
 
-// Para hacer que "COLABOREMOS PARA" sea en negrita:
-const modifiedWords = words.map(word => {
-  if (word[0] === "COLABOREMOS PARA") {
-    return [ "<strong>" + word[0] + "</strong>", word[1] ];
-  }
-  return word;
-});
+
 
 // Llama a la función para crear la nube de palabras
 document.addEventListener("DOMContentLoaded", generarNubeDePalabras);
