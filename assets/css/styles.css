@@ -1,75 +1,19 @@
+/* ======== INDEX HTML ======== */
 /* ===== GLOBAL STYLES ===== */
 html,
 body {
   margin: 0;
   padding: 0;
-  width: 100vw;
+  width: 100%;
   background-color: #f0f0f0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
 }
-
-.bodysanamente {
+h1{
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-    
+  text-align: center;
+  color: #274259;
 }
-
-#mainsanamente {
-    padding: 20px;
-    background-color: #f9f9f9;
-}
-
-.card-container-sanamente {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.cardsanamente {
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 300px;
-    transition: transform 0.3s ease;
-}
-
-.cardsanamente:hover {
-    transform: translateY(-10px);
-}
-
-.cardsanamente img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.cardsanamente h3 {
-    margin: 15px;
-    font-size: 1.2em;
-    
-}
-.cardsanamente h2{
-  color: #f14c3d;
-}
-
-.cardsanamente p,ul {
-    margin: 0 15px 15px;
-    font-size: 0.9em;
-    color: #274259;
-    line-height: 1.5;
-}
-
-
-
-.footer-list {
-  list-style-type: none;
-}
-
 mark {
   background-color: transparent;
   color: #f24c3d;
@@ -82,7 +26,6 @@ mark {
   color: #274259;
   padding: 20px 0;
 }
-
 /* ===== HEADER ===== */
 header {
   display: flex;
@@ -110,18 +53,10 @@ header a {
   transform: scale(1.5);
   object-fit: contain;
   transition: transform 0.3s;
-  -webkit-transform: scale(1.5);
-  -moz-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  -o-transform: scale(1.5);
 }
 
 .icon-header:hover {
   transform: scale(1.8);
-  -webkit-transform: scale(1.8);
-  -moz-transform: scale(1.8);
-  -ms-transform: scale(1.8);
-  -o-transform: scale(1.8);
 }
 
 /* Navbar */
@@ -132,6 +67,15 @@ header a {
 /* Buttons */
 button {
   background-color: aquamarine;
+}
+
+/* ===== WORD CLOUD ===== */
+
+#wordCloudCanvas {
+  margin-top: -40px; /* Ajusta este valor según lo necesites */
+}
+canvas {
+  background-color: transparent;
 }
 
 /* ===== SECTIONS ===== */
@@ -153,7 +97,7 @@ button {
 .ourTeamSection .descripcion {
   padding: 0 50px;
   text-align: center;
-  color: #162938;
+  color: #274259;
 }
 
 /* ===== CLIENT LOGO ANIMATION ===== */
@@ -197,10 +141,12 @@ button {
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .team-card {
-  width: 220px;
+  width: 100%;
+  max-width: 220px;
   background: #fff;
   border-radius: 15px;
   padding: 20px;
@@ -220,7 +166,7 @@ button {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #336185;
+  color: #f24c3d;
 }
 
 .teamate-role {
@@ -245,6 +191,140 @@ button {
   color: #f24c3d;
 }
 
+/* ===== CARDS SECTION ===== */
+.cardSection {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card1 {
+  color: #274259;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 32%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card1 img {
+  width: 100%;
+  height: 40%;
+  object-fit: cover;
+}
+
+.card1 h2 {
+  font-size: 1.5rem;
+  margin: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.card1 p {
+  padding: 0 20px 20px;
+  text-align: justify;
+  font-size: 1rem;
+}
+
+.button2 {
+  border-width: 0;
+  background-color: #f24c3d;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  width: fit-content;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 auto 40px;
+  border-radius: 8px;
+}
+
+.button2:hover {
+  background-color: #f14c3d;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.initialText {
+  color: #274259;
+  text-align: center;
+  margin: 0 20px;
+  padding: 30px;
+}
+
+
+
+.textnav:hover {
+  color: #f14c3d;
+  transform: scale(1.1);
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.imgcorpo {
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+  display: inline-block;
+  border-radius: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin: 40px 0 60px;
+}
+
+/* ===== TESTIMONIO SECTION STYLES ===== */
+
+/* Estilo general de la sección */
+.testimonialSection {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Contenedor de los testimonios */
+.testimonials-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* Estilo de cada testimonio */
+.testimonial {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #ff6b6b;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Texto del testimonio */
+.testimonial p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #274259;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+/* Autor del testimonio */
+.testimonial h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #f24c3d;
+  margin: 0;
+}
 /* ===== FOOTER ===== */
 .footer {
   background: #27425914;
@@ -341,94 +421,96 @@ button {
   color: #27425970;
 }
 
-/* ===== CARDS SECTION ===== */
-.cardSection {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 20px;
+.footer-list {
+  list-style-type: none;
+}
+/* ======== SANAMENTE HTML ======== */
+
+/* ===== SANAMENTE GLOBAL ===== */
+
+.bodysanamente {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.card1 {
-  color: #274259;
-  background-color: #fff;
-  border-radius: 10px;
-  width: 32%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+#mainsanamente {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* ===== SANAMENTE CARDS ===== */
+
+.card-container-sanamente {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px; /* Espacio entre tarjetas */
+  justify-content: center;
+}
+
+.cardsanamente {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   overflow: hidden;
+  width: 600px; /* Tamaño fijo para todas las tarjetas horizontales */
+  height: 350px; /* Altura fija para mantener la proporción rectangular */
+  display: flex; /* Para alinear imagen y contenido horizontalmente */
+  transition: transform 0.3s ease;
+  flex-direction: row; /* Distribuye imagen y contenido de manera horizontal */
+  justify-content: space-between; /* Espacio entre la imagen y el contenido */
+}
+
+.cardsanamente:hover {
+  transform: translateY(15px);
+}
+
+.cardsanamente img {
+  width: 40%; /* La imagen ocupa el 40% del ancho */
+  height: 100%; /* Ocupa toda la altura de la tarjeta */
+  object-fit: cover;
+  border-radius: 15px 0 0 15px; /* Bordes redondeados solo en la parte izquierda */
+}
+
+.cardsanamente .content {
+  padding: 20px;
+  width: 60%; /* El contenido ocupa el 60% del espacio */
   display: flex;
   flex-direction: column;
+  justify-content: space-between; /* Distribuye los elementos en la tarjeta de manera equitativa */
 }
 
-.card1 img {
-  width: 100%;
-  height: 40%;
-  object-fit: cover;
-}
-
-.card1 h2 {
-  font-size: 1.5rem;
-  margin: 10px;
-  padding-bottom: 10px;
-  text-align: center;
-}
-
-.card1 p {
-  padding: 0 20px 20px;
-  text-align: justify;
-  font-size: 1rem;
-}
-
-.button2 {
-  border-width: 0;
-  background-color: #f24c3d;
-  color: #fff;
-  cursor: pointer;
-  display: block;
-  font-size: 16px;
-  width: fit-content;
-  text-decoration: none;
-  padding: 10px;
-  margin: 0 auto 40px;
-  border-radius: 8px;
-}
-
-.button2:hover {
-  background-color: #f14c3d;
-  transform: scale(1.1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-}
-
-.initialText {
-  color: #274259;
-  text-align: center;
-  margin: 0 200px;
-  padding: 30px;
-}
-
-canvas {
-  background-color: transparent;
-}
-
-.textnav:hover {
+.cardsanamente h2 {
   color: #f14c3d;
-  transform: scale(1.1);
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
+  font-size: 1.6em;
+  margin-bottom: 15px;
+  font-weight: bold;
 }
 
-.imgcorpo {
-  width: 100%;
-  height: auto;
-  max-width: 1000px;
-  display: inline-block;
-  border-radius: 40px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  margin: 40px 0 60px;
+.cardsanamente h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #2c3e50;
+  font-weight: bold;
 }
 
-#wordCloudCanvas {
-  margin-top: -40px; /* Ajusta este valor según lo necesites */
+.cardsanamente p {
+  font-size: 1em;
+  color: #274259;
+  line-height: 1.6;
+  margin-bottom: 15px;
 }
+
+.cardsanamente ul {
+  font-size: 1em;
+  color: #274259;
+  line-height: 1.6;
+  margin-left: 25px;
+}
+
+.cardsanamente ul li {
+  margin-bottom: 10px; /* Separación entre los ítems de la lista */
+}
+
+
