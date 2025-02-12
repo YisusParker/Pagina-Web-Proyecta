@@ -33,6 +33,12 @@
             z-index: -1;
         }
 
+        .form-container {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
         .form-card {
             width: 90%;
             max-width: 400px;
@@ -94,50 +100,62 @@
         .back-icon:hover {
             color: #e04e2e;
         }
+
+        .zl-url {
+            margin-top: 20px;
+        }
     </style>
 </head>
 
 <body>
-    
-    <main class="form-card">
-        <!-- Icono de retroceso con Font Awesome -->
-        <a href="..\pages\index.html"><i class="fas fa-arrow-left back-icon" onclick=";"></i></a>
-        <h2 class="form-title"><span style="color: #274259;">Asesoría</span> <span style="color: #e04e2e;">Virtual</span></h2>
-        <form>
-            <label for="tipo-cliente">Tipo de cliente:</label>
-            <select name="tipoCliente" id="tipo-cliente" required>
-                <option value="" disabled selected>Seleccione...</option>
-                <option value="natural">Natural</option>
-                <option value="empresa">Empresa</option>
-            </select>
 
-            <label for="program">Selecciona un programa de interés</label>
-            <select id="program" name="program" required>
-                <option value="" disabled selected>Seleccione...</option>
-                <option value="programaForamtivo">Programa formativos</option>
-                <option value="programaAtencionPsico">Atención psicológica</option>
-                <option value="programaNegociacionResolucionConflictos">Negociación y resolución de conflictos</option>
-                <option value="programaEquiposTrabajo">De grupo de trabajos a equipos de trabajo</option>
-                <option value="programaCoaching">Coaching</option>
-                <option value="programa6">Programa de prejubilados</option>
-                <option value="programaEstiloSaludable">Estilo de vida saludable</option>
-                <option value="programaLiderazgo">Escuela de liderazgo</option>
-                <option value="programaIdentidadServ">Identidad de servicio</option>
-            </select>
+    <main class="form-container">
+        <div class="form-card">
+            <!-- Icono de retroceso con Font Awesome -->
+            <a href="..\index.html"><i class="fas fa-arrow-left back-icon"></i></a>
+            <h2 class="form-title"><span style="color: #274259;">Asesoría</span> <span
+                    style="color: #e04e2e;">Virtual</span></h2>
+            <form>
+                <label for="tipo-cliente">Tipo de cliente:</label>
+                <select name="tipoCliente" id="tipo-cliente" required>
+                    <option value="" disabled selected>Seleccione...</option>
+                    <option value="natural">Natural</option>
+                    <option value="empresa">Empresa</option>
+                </select>
 
-            <label for="name">Nombre completo/Razón social</label>
-            <input type="text" id="name" name="name" placeholder="Tu nombre completo" required>
+                <label for="program">Selecciona un programa de interés</label>
+                <select id="program" name="program" required>
+                    <option value="" disabled selected>Seleccione...</option>
+                    <option value="programaForamtivo">Programa formativos</option>
+                    <option value="programaAtencionPsico">Atención psicológica</option>
+                    <option value="programaNegociacionResolucionConflictos">Negociación y resolución de conflictos</option>
+                    <option value="programaEquiposTrabajo">De grupo de trabajos a equipos de trabajo</option>
+                    <option value="programaCoaching">Coaching</option>
+                    <option value="programa6">Programa de prejubilados</option>
+                    <option value="programaEstiloSaludable">Estilo de vida saludable</option>
+                    <option value="programaLiderazgo">Escuela de liderazgo</option>
+                    <option value="programaIdentidadServ">Identidad de servicio</option>
+                </select>
 
-            <label for="email">Correo electrónico</label>
-            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                <label for="name">Nombre completo/Razón social</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre completo" required>
 
-            <label for="phone">Teléfono</label>
-            <input type="tel" id="phone" name="phone" placeholder="Tu teléfono" required>
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
 
-            <label for="message">Mensaje</label>
-            <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
+                <label for="phone">Teléfono</label>
+                <input type="tel" id="phone" name="phone" placeholder="Tu teléfono" required>
 
-            <button type="submit">Enviar</button>
-        </form>
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <a id="zl-url" class="zl-url"
+            href="https://www.doctoralia.co/ximena-esperanza-perez-arce/psicologo/barranquilla" rel="nofollow"
+            data-zlw-doctor="ximena-esperanza-perez-arce" data-zlw-type="big_with_calendar" data-zlw-opinion="false"
+            data-zlw-hide-branding="true" data-zlw-saas-only="true">Ximena Esperanza Pérez Arce - Doctoralia.co</a>
+        <script>!function ($_x, _s, id) { var js, fjs = $_x.getElementsByTagName(_s)[0]; if (!$_x.getElementById(id)) { js = $_x.createElement(_s); js.id = id; js.src = "//platform.docplanner.com/js/widget.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "zl-widget-s");</script>
     </main>
 </body>
