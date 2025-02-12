@@ -41,7 +41,7 @@
   /* ===== HEADER ===== */
   header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     padding: 1.25em 1.25em 0.625em;
     color: black;
@@ -57,13 +57,13 @@
   /* Logo */
   .logo-header {
     width: 7.5em;
+    margin-bottom: 1em;
   }
   
   /* Social Icons in Header */
   .icon-header {
     color: var(--secondary-color);
     transform: scale(1.5);
-    object-fit: contain;
     transition: transform 0.3s;
   }
   
@@ -74,25 +74,34 @@
   /* Navbar */
   #navbar {
     background-color: rgba(39, 66, 89, 0.08);
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
   
   /* Responsive Header */
   @media (max-width: 768px) {
     header {
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
+      padding: 1em; /* Adjust padding for smaller screens */
     }
-  
+
     .logo-header {
       margin-bottom: 1em;
     }
-  
-    #navbar {
+
+    header #navbar {
       width: 100%;
+      justify-content: center;
+      margin-bottom: 2em; /* Added spacing at the bottom */
     }
-  
-    header a {
-      padding: 0.625em 0;
+
+    header .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      margin-top: 1.5em; /* Adjusted spacing at the top */
     }
   }
   
