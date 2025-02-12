@@ -120,6 +120,7 @@
   .imgcorpo {
     flex: 1; /* Allow the image to grow and take available space */
     max-width: 50em; /* Set a smaller max-width for the image */
+    max-height: 100%; /* Maintain aspect ratio */
     height: auto; /* Maintain aspect ratio */
     border-radius: 2.5em;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -135,6 +136,7 @@
     #wordCloudCanvas,
     .imgcorpo {
       max-width: 100%; /* Allow full width on smaller screens */
+      max-height: 100%; /* Maintain aspect ratio */
       border-radius: 1em; /* Adjust border-radius for smaller screens */
     }
   }
