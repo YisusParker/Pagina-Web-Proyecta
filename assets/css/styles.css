@@ -569,14 +569,15 @@
 
 /* ===== RESPONSIVE ===== */
 
-  @media (min-width: 769px) and (max-width: 1016px) {
-    .card1 {
-        max-width: 48%;
-    }
-}
-  @media (min-width: 769px) and (max-width: 1016px) {
-    .card1 {
-      max-width: 48%;
-    }
+@media (min-width: 769px) and (max-width: 1016px) {
+  .card1 {
+    max-width: 48%;
   }
+}
+
+@media (max-width: 768px) {
+  .card1 {
+    max-width: 100%;
+  }
+}
   
