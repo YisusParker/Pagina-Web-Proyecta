@@ -4,190 +4,83 @@
     <title>Formulario</title>
     <!-- Incluir Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="..\assets\css\styles.css" />
 
-    <style>
-        body {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            position: relative;
-            background-image: url('../assets/img/formbackground-image.webp');
-            background-size: cover;
-            background-position: center;
-            overflow: hidden;
-        }
-
-        body::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: inherit;
-            filter: blur(2px);
-            z-index: -1;
-        }
-
-        .form-container {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            align-items: center;
-            width: 100%;
-            max-width: 600px;
-        }
-
-        .form-card {
-            width: 100%;
-            padding: 20px;
-            background-color: #ffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .form-card label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-            font-size: 14px;
-            color: #274259;
-        }
-
-        .form-card select,
-        .form-card input,
-        .form-card textarea {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 16px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 14px;
-            box-sizing: border-box;
-        }
-
-        .form-card button {
-            width: 100%;
-            padding: 10px;
-            background-color: #ff583385;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        .form-card button:hover {
-            background-color: #e04e2e;
-        }
-
-        .form-title {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        /* Estilo para el icono de retroceso */
-        .back-icon {
-            font-size: 24px;
-            color: #274259;
-            cursor: pointer;
-            margin-bottom: 20px;
-            display: inline-block;
-        }
-
-        .back-icon:hover {
-            color: #e04e2e;
-        }
-
-        .zl-url {
-            margin-top: 20px;
-        }
-
-        h2 {
-            text-align: center;
-            color: #fff;
-        }
-
-        .form-wrapper {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        @media (min-width: 768px) {
-            .form-wrapper {
-                flex-direction: row;
-                align-items: flex-start;
-            }
-
-            .zl-url {
-                margin-top: 0;
-                margin-left: 20px;
-            }
-        }
-    </style>
 </head>
 
 <body>
-    <h2>Contactanos</h2>
+    <header id="navbar">
+        <div class="logo-header">
+            <img src="..\assets\icons\Logo.svg" style="width: fit-content; padding-top: 20px;"
+                alt="Logo de la empresa" />
+        </div>
+        <nav class="main-nav">
+            <a class="textnav" href="..\index.html">Home</a>
+            <a class="textnav" href="..\pages\sanamente.html" ">Programas</a>
+            <a class=" textnav" href="..\pages\gallery.html" style="color:#f24c3d;">Galeria</a>
+            <a class="textnav" href="..\pages\contact.html">Contactanos</a>
+        </nav>
+        <nav class="social-nav">
+            <a class="icon-social" href="https://www.linkedin.com/company/proyecta-potenciales-humanos/"
+                target="_blank">
+                <i class="fab fa-linkedin fa-1x icon-header"></i>
+            </a>
+            <a class="icon-social" href="https://www.facebook.com/p/Proyecta-Potenciales-Humanos-100051498353683/?_rdr"
+                target="_blank">
+                <i class="fab fa-facebook fa-1x icon-header"></i>
+            </a>
+            <a class="icon-social" href="https://www.instagram.com/psicoproyecta/" target="_blank">
+                <i class="fab fa-instagram fa-1x icon-header"></i>
+            </a>
+        </nav>
+    </header>
     <main class="form-container">
-        <!---->
-        <div class="form-wrapper">
-            <div class="form-card">
-            <!-- Icono de retroceso con Font Awesome -->
-            <a href="..\index.html"><i class="fas fa-arrow-left back-icon"></i></a>
-            <h2 class="form-title"><span style="color: #274259;">Asesoría</span> <span
-                style="color: #e04e2e;">Virtual</span></h2>
-            <form>
-                <label for="tipo-cliente">Tipo de cliente:</label>
-                <select name="tipoCliente" id="tipo-cliente" required>
-                <option value="" disabled selected>Seleccione...</option>
-                <option value="natural">Natural</option>
-                <option value="empresa">Empresa</option>
-                </select>
+        <h2>Contactanos</h2>
+        <!-- Calendly inline widget begin -->
+        <div class="calendly-inline-widget" data-url="https://calendly.com/jdam18102001/30min?hide_gdpr_banner=1"
+            style="min-width:320px;height:700px;"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        <!-- Calendly inline widget end -->
+        <footer class="footer">
+            <div class="footer-container">
+                <!-- Contact Section -->
+                <div class="footer-contact">
+                    <img src="..\assets\icons\Logo.svg" alt="Logo Proyecta" class="footer-logo" />
+                    <h4>Contacto</h4>
+                    <ul class="footer-list">
+                        <li><a href="mailto:info@proyecta.com">info@proyecta.com</a></li>
+                        <li><a href="tel:3145657611">3145657611</a></li>
+                        <li class="footer-icons">
+                            <a href="https://www.linkedin.com/company/proyecta-potenciales-humanos/" target="_blank">
+                                <i class="fab fa-linkedin icon-footer"></i>
+                            </a>
+                            <a href="https://www.facebook.com/p/Proyecta-Potenciales-Humanos-100051498353683/?_rdr"
+                                target="_blank">
+                                <i class="fab fa-facebook icon-footer"></i>
+                            </a>
+                            <a href="https://www.instagram.com/psicoproyecta/" target="_blank">
+                                <i class="fab fa-instagram icon-footer"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
-                <label for="program">Selecciona un programa de interés</label>
-                <select id="program" name="program" required>
-                <option value="" disabled selected>Seleccione...</option>
-                <option value="programaForamtivo">Programa formativos</option>
-                <option value="programaAtencionPsico">Atención psicológica</option>
-                <option value="programaNegociacionResolucionConflictos">Negociación y resolución de conflictos
-                </option>
-                <option value="programaEquiposTrabajo">De grupo de trabajos a equipos de trabajo</option>
-                <option value="programaCoaching">Coaching</option>
-                <option value="programa6">Programa de prejubilados</option>
-                <option value="programaEstiloSaludable">Estilo de vida saludable</option>
-                <option value="programaLiderazgo">Escuela de liderazgo</option>
-                <option value="programaIdentidadServ">Identidad de servicio</option>
-                </select>
+                <!-- Location Section -->
+                <div class="footer-location">
+                    <h5>Encuéntranos</h5>
+                    <p>
+                        <a href="https://www.google.com/maps?q=Cra+54+%23132-120,+Barranquilla" target="_blank">
+                            <!--Revisar direccion-->
+                            Cra 54 #132-120<br />
+                            Barranquilla
+                        </a>
+                    </p>
+                </div>
 
-                <label for="name">Nombre completo/Razón social</label>
-                <input type="text" id="name" name="name" placeholder="Tu nombre completo" required>
-
-                <label for="email">Correo electrónico</label>
-                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
-
-                <label for="phone">Teléfono</label>
-                <input type="tel" id="phone" name="phone" placeholder="Tu teléfono" required>
-
-                <label for="message">Mensaje</label>
-                <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
             </div>
-
-        </div> 
-        <a id="zl-url" class="zl-url"
-            href="https://www.doctoralia.co/ximena-esperanza-perez-arce/psicologo/barranquilla" rel="nofollow"
-            data-zlw-doctor="ximena-esperanza-perez-arce" data-zlw-type="big_with_calendar" data-zlw-opinion="false"
-            data-zlw-hide-branding="true" data-zlw-saas-only="true">Ximena Esperanza Pérez Arce - Doctoralia.co</a>
-        <script>!function ($_x, _s, id) { var js, fjs = $_x.getElementsByTagName(_s)[0]; if (!$_x.getElementById(id)) { js = $_x.createElement(_s); js.id = id; js.src = "//platform.docplanner.com/js/widget.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "zl-widget-s");</script>
-    </main>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Proyecta. Todos los derechos reservados.</p>
+            </div>
+        </footer>
 
 </body>
