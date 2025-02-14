@@ -123,6 +123,7 @@ button {
   flex: 1; /* Allow the canvas to grow and take available space */
   max-width: 40em; /* Set a smaller max-width for the canvas */
   height: auto; /* Maintain aspect ratio */
+  margin-right: 20em;
 }
 
 /* Corporate Image */
@@ -147,6 +148,10 @@ button {
     max-width: 100%;
     max-height: none; /* Elimina la limitación de altura máxima */
     border-radius: 1em;
+  }
+
+  #wordCloudCanvas {
+    margin-right: 0;
   }
 }
 
@@ -310,7 +315,8 @@ canvas {
   color: #fff;
   cursor: pointer;
   display: block;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
   width: fit-content;
   text-decoration: none;
   padding: 0.625em;
@@ -599,6 +605,9 @@ canvas {
 @media (max-width: 768px) {
   main {
     grid-template-columns: 1fr; /* Adjust main grid layout for small screens */
+  }
+  .button2{
+    font-size: 1.2rem;
   }
 }
 
