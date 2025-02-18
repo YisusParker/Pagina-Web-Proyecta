@@ -140,7 +140,6 @@ button {
   flex: 1; /* Allow the canvas to grow and take available space */
   max-width: 40em; /* Set a smaller max-width for the canvas */
   height: auto; /* Maintain aspect ratio */
-  margin-right: 20em;
 }
 
 /* Corporate Image */
@@ -170,6 +169,19 @@ button {
   #wordCloudCanvas {
     margin-right: 0;
   }
+}
+
+/* Adjustments for medium screens like tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .image-wordcloud-container {
+    gap: 0.625em; /* Smaller space between the word cloud and image */
+  }
+
+  #wordCloudCanvas {
+    margin-right: 0; /* Smaller margin for the canvas */
+  }
+
+  
 }
 
 canvas {
