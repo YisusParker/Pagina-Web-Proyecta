@@ -475,6 +475,10 @@ canvas {
   width: 1.5em;
   height: 1.5em;
   transition: transform 0.3s;
+  -webkit-transition: transform 0.3s;
+  -moz-transition: transform 0.3s;
+  -ms-transition: transform 0.3s;
+  -o-transition: transform 0.3s;
 }
 
 .icon-footer:hover {
