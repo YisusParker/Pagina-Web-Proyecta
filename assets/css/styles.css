@@ -65,17 +65,13 @@ header a {
   color: var(--secondary-color);
   transform: scale(1.5);
   transition: transform 0.3s;
-  -webkit-transition: transform 0.3s;
-  -moz-transition: transform 0.3s;
-  -ms-transition: transform 0.3s;
-  -o-transition: transform 0.3s;
 }
 
 .icon-header:hover {
   transform: scale(1.8);
 }
 
-.social-nav{
+.social-nav {
   align-content: center;
   margin-right: 3rem;
 }
@@ -87,41 +83,6 @@ header a {
   width: 100%;
 }
 
-/* Responsive Header */
-@media (max-width: 768px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    padding: 1em; /* Adjust padding for smaller screens */
-  }
-
-  .logo-header {
-    margin-bottom: .5em;
-    margin-right: 2.9em;
-  }
-
-  header #navbar {
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 2em; /* Added spacing at the bottom */
-  }
-
-  header .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    margin-top: 1.5em; /* Adjusted spacing at the top */
-  }
-  header .social-nav{
-    margin-top: 1.2em;
-  }
-
-  .main-nav {
-    margin-right: 1.8em;
-  }
-}
-
 /* Buttons */
 button {
   background-color: aquamarine;
@@ -130,57 +91,27 @@ button {
 /* Container for the image and word cloud */
 .image-wordcloud-container {
   display: flex;
-  align-items: flex-start; /* Align items to the top */
-  justify-content: center; /* Center the container */
-  gap: 1.25em; /* Space between the word cloud and image */
-  margin: 2.5em 0 3.75em; /* Adjust margin as needed */
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.25em;
+  margin: 2.5em 0 3.75em;
 }
 
 /* Word Cloud Canvas */
 #wordCloudCanvas {
-  flex: 1; /* Allow the canvas to grow and take available space */
-  max-width: 40em; /* Set a smaller max-width for the canvas */
-  height: auto; /* Maintain aspect ratio */
+  flex: 1;
+  max-width: 40em;
+  height: auto;
 }
 
 /* Corporate Image */
 .imgcorpo {
-  width: 100%; /* Asegura que la imagen ocupe el ancho del contenedor */
-  max-width: 50em; /* Limita el ancho máximo */
-  height: auto; /* Mantiene la proporción de la imagen */
-  object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+  width: 100%;
+  max-width: 50em;
+  height: auto;
+  object-fit: cover;
   border-radius: 2.5em;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* Responsive Image and Word Cloud Container */
-@media (max-width: 768px) {
-  .image-wordcloud-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #wordCloudCanvas,
-  .imgcorpo {
-    max-width: 100%;
-    max-height: none; /* Elimina la limitación de altura máxima */
-    border-radius: 1em;
-  }
-
-  #wordCloudCanvas {
-    margin-right: 0;
-  }
-}
-
-/* Adjustments for medium screens like tablets */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .image-wordcloud-container {
-    gap: 0.625em; /* Smaller space between the word cloud and image */
-  }
-
-  #wordCloudCanvas {
-    margin-right: 0; /* Smaller margin for the canvas */
-  }
 }
 
 canvas {
@@ -474,10 +405,6 @@ canvas {
   width: 1.5em;
   height: 1.5em;
   transition: transform 0.3s;
-  -webkit-transition: transform 0.3s;
-  -moz-transition: transform 0.3s;
-  -ms-transition: transform 0.3s;
-  -o-transition: transform 0.3s;
 }
 
 .icon-footer:hover {
@@ -516,47 +443,53 @@ canvas {
 }
 
 /* ===== SANAMENTE HTML ===== */
-
 .mainsanamente h2 {
   font-size: 2.5rem;
   color: #f24c3d;
   text-align: center;
 }
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
 }
+
 .card {
   display: flex;
   flex-direction: column;
   border: 1px solid #ccc;
   border-radius: 8px;
   overflow: hidden;
-  width: calc(50% - 20px); /* Two cards per row with gap */
+  width: calc(50% - 20px);
   box-sizing: border-box;
 }
+
 .card img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
+
 .card-content {
   padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 .card-title {
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 10px;
   color: #ff6b6b;
 }
+
 .benef {
   color: #ff6b6b;
 }
+
 .card-description {
   font-size: 1em;
   color: #274259;
@@ -564,15 +497,15 @@ canvas {
 
 /* ===== GALLERY LAYOUT ===== */
 .main_gallery {
-  padding: 1rem; /* Reduced padding */
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem; /* Reduced gap */
+  gap: 1rem;
 }
 
 .main_gallery h2 {
-  font-size: 2.5rem; /* Larger font size */
-  color: #f24c3d; /* Primary color */
+  font-size: 2.5rem;
+  color: #f24c3d;
   text-align: center;
 }
 
@@ -583,12 +516,12 @@ canvas {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  height: 500px; /* Adjust height to auto */
+  height: 500px;
 }
 
 .collection h2 {
-  font-size: 1.3rem; /* Smaller font size */
-  padding: 0.5rem; /* Smaller padding */
+  font-size: 1.3rem;
+  padding: 0.5rem;
   background-color: #27425914;
   color: #f24c3d;
   margin: 0;
@@ -596,10 +529,10 @@ canvas {
 
 .gallery {
   display: flex;
-  gap: 0.5rem; /* Smaller gap */
-  padding: 0.5rem; /* Smaller padding */
+  gap: 0.5rem;
+  padding: 0.5rem;
   overflow-x: auto;
-  flex: 1; /* Ensure gallery takes up remaining space */
+  flex: 1;
 }
 
 .gallery img {
@@ -610,35 +543,35 @@ canvas {
 
 .gallery img:hover {
   transform: scale(1.005);
-  -webkit-transform: scale(1.009);
-  -moz-transform: scale(1.005);
-  -ms-transform: scale(1.005);
-  -o-transform: scale(1.005);
 }
 
 /* ===== GLOBAL STYLES ===== */
-
 .form-container h2 {
   font-size: 2.5rem;
   color: #f24c3d;
   text-align: center;
 }
+.form-container .gif {
+  width: 20%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 1024px) {
   main {
-    grid-template-columns: repeat(
-      2,
-      1fr
-    ); /* Adjust main grid layout for medium screens */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 768px) {
   main {
-    grid-template-columns: 1fr; /* Adjust main grid layout for small screens */
+    grid-template-columns: 1fr;
   }
-  .button2{
+  .button2 {
     font-size: 1.2rem;
   }
 }
@@ -646,21 +579,85 @@ canvas {
 /* Responsive adjustments for cards */
 @media (max-width: 768px) {
   .card {
-    width: 100%; /* Full width on smaller screens */
+    width: 100%;
   }
 }
-
-/* ===== RESPONSIVE ===== */
 
 /* Responsive adjustments for card1 */
 @media (min-width: 769px) and (max-width: 1016px) {
   .card1 {
-    max-width: 48%; /* Adjust card1 width for medium screens */
+    max-width: 48%;
   }
 }
 
 @media (max-width: 768px) {
   .card1 {
-    max-width: 100%; /* Full width for card1 on small screens */
+    max-width: 100%;
+  }
+}
+
+/* Responsive Header */
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 1em;
+  }
+
+  .logo-header {
+    margin-bottom: .5em;
+    margin-right: 2.9em;
+  }
+
+  header #navbar {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 2em;
+  }
+
+  header .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1.5em;
+  }
+
+  header .social-nav {
+    margin-top: 1.2em;
+  }
+
+  .main-nav {
+    margin-right: 1.8em;
+  }
+}
+
+/* Responsive Image and Word Cloud Container */
+@media (max-width: 768px) {
+  .image-wordcloud-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #wordCloudCanvas,
+  .imgcorpo {
+    max-width: 100%;
+    max-height: none;
+    border-radius: 1em;
+  }
+
+  #wordCloudCanvas {
+    margin-right: 0;
+  }
+}
+
+/* Adjustments for medium screens like tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .image-wordcloud-container {
+    gap: 0.625em;
+  }
+
+  #wordCloudCanvas {
+    margin-right: 0;
   }
 }
