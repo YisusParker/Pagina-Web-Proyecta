@@ -131,6 +131,7 @@ button {
 .image-wordcloud-container {
   display: flex;
   align-items: flex-start; /* Align items to the top */
+  justify-content: center; /* Center the container */
   gap: 1.25em; /* Space between the word cloud and image */
   margin: 2.5em 0 3.75em; /* Adjust margin as needed */
 }
@@ -180,8 +181,6 @@ button {
   #wordCloudCanvas {
     margin-right: 0; /* Smaller margin for the canvas */
   }
-
-  
 }
 
 canvas {
