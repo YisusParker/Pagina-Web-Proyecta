@@ -138,23 +138,35 @@ canvas {
   color: var(--primary-color);
 }
 
+
+
 /* ===== CLIENT LOGO ANIMATION ===== */
 .clientSection {
   width: 100%;
   overflow: hidden;
-  white-space: nowrap;
+  position: relative;
 }
 
 .logo-container {
-  display: inline-block;
-  animation: slide 20s linear infinite;
+  width: 100%;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: slide 15s linear infinite;
 }
 
 .logoClass {
-  width: 10%;
-  aspect-ratio: 4/3;
+  width: 150px;
+  height: calc(150px * 4/3);
+  aspect-ratio: 3/4;
   object-fit: contain;
-  padding-right: 1.25em;
+  margin: 0 20px;
+  flex-shrink: 0;
 }
 
 @keyframes slide {
@@ -162,14 +174,8 @@ canvas {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
-}
-
-.logo-container::after {
-  content: "";
-  display: inline-block;
-  animation: slide 20s linear infinite;
 }
 
 /* ===== TEAM CARDS ===== */
